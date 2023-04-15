@@ -171,6 +171,8 @@ img {
     width: 94%;
 }
 
+/* formulario */
+
 .form {
     display: flex;
     flex-direction: column;
@@ -292,6 +294,8 @@ textarea {
     padding-left: 15px;
 }
 
+/* footer */
+
 .f1 {
     display: flex;
     align-content: flex-end;
@@ -321,6 +325,18 @@ textarea {
 .icono {
     margin-right: 70px;
     color: var(--azul);
+}
+
+.rights {
+    margin-top: 1px;
+}
+
+.rights {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    left: 42%;
+    
 }
 
 /* media querys */
