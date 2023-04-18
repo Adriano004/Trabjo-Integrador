@@ -1,2 +1,2 @@
 # Trabjo-Integrador
-no terminado del todo
+no terminado del todo aún
