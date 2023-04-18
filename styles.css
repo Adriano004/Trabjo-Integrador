@@ -8,9 +8,14 @@
     --azul: #5a6d80;
     --gris: #91969b;
 }
+
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,7 +30,10 @@ a {
     text-decoration: none;
 }
 
-h1, h3, h4, a {
+h1,
+h3,
+h4,
+a {
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
     color: var(--blanco);
@@ -34,15 +42,19 @@ h1, h3, h4, a {
 h1 {
     font-size: 4.8rem;
 }
+
 h2 {
     font-size: 4rem;
 }
+
 h3 {
     font-size: 3.2rem;
 }
+
 h4 {
     font-size: 2.8rem;
 }
+
 img {
     max-width: 100%;
 }
@@ -112,7 +124,7 @@ img {
 }
 
 /* seccion de productos */
-.products {
+.pro {
     padding: 40px 0;
 }
 
@@ -128,6 +140,17 @@ img {
     color: var(--azul);
 }
 
+.pro__texto-p {
+    padding-bottom: 20px;
+}
+
+.products {
+    color: var(--rojo);
+    font-size: 35px;
+    text-transform: uppercase;
+    padding: 38% 0 0 15px;
+}
+
 .guns {
     display: block;
     justify-content: center;
@@ -139,36 +162,114 @@ img {
 }
 
 .rifle {
+    display: flex;
+    background-image: url(rifle.jpg);
+    cursor: pointer;
+    background-size: cover;
     width: 40%;
     margin-right: 10px;
 }
 
 .handgun {
-    width: 100%;
+    background-image: url(handgun.jpg);
+    cursor: pointer;
+    background-size: cover;
+    width: 310px;
+    height: 100%;
     margin-right: 14px;
 }
 
+.hand {
+    padding: 58% 0 0 10px;
+    color: var(--rojo);
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
 .ammo {
-    width: 89%;
+    background-image: url(ammo.jpg);
+    cursor: pointer;
+    background-size: cover;
+    width: 300px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.amm {
+    padding: 60% 0 0 10px;
+    color: var(--rojo);
+    font-size: 35px;
+    text-transform: uppercase;
 }
 
 .caja2 {
     display: flex;
+    margin: 8px 0;
 }
 
-.clean, .revolver {
-    width: 42%;
-    padding-right: 10px;
+.clean {
+    background-image: url(limpieza.jpg);
+    cursor: pointer;
+    background-size: cover;
+    height: 235px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.clea {
+    padding: 64% 0 0 10px;
+    color: var(--rojo);
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.revolver {
+    background-image: url(revolver.jpg);
+    cursor: pointer;
+    background-size: cover;
+    height: 235px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.rev {
+    padding: 64% 0 0 10px;
+    color: var(--rojo);
+    font-size: 35px;
+    text-transform: uppercase;
 }
 
 .sniper {
-    position: absolute;
-    right: 73px;
+    display: flex;
+    background-image: url(sniper.jpg);
+    cursor: pointer;
+    background-size: cover;
+    height: 235px;
+    width: 484px;
+    margin: 8px 0;
+}
+
+.snip {
+    padding: 40% 0 0 10px;
+    color: var(--rojo);
+    font-size: 35px;
+    text-transform: uppercase;
 }
 
 .shotgun {
+    background-image: url(shotgun.jpg);
+    cursor: pointer;
+    background-size: cover;
     height: 300px;
     width: 94%;
+}
+
+.shot {
+    padding: 23% 0 0 10px;
+    color: var(--rojo);
+    font-size: 35px;
+    text-transform: uppercase;
 }
 
 /* formulario */
@@ -179,30 +280,36 @@ img {
     align-items: center;
     height: 40%;
 }
+
 .form form {
     display: flex;
     flex-direction: column;
     width: 40%;
     height: 50%;
     padding-top: 3%;
-    margin-right: 5%;
+    margin-right: 10%;
 }
+
 .contact {
     font-size: 60px;
 }
+
 .name {
     display: flex;
     flex-direction: column;
     margin-right: 10%;
 }
-.email {
+
+.last-n {
     display: flex;
     flex-direction: column;
     margin-left: 180px;
 }
+
 .fline {
     display: flex;
 }
+
 .fline input {
     margin-bottom: 3%;
     width: 200%;
@@ -214,26 +321,32 @@ img {
     font-size: 1.5rem;
     padding-left: 15px;
 }
+
 .fline label {
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
+    ;
     margin-bottom: 4%;
 }
+
 .form h1 {
     font-size: 4.5rem;
     padding-top: 5%;
-    color:  var(--rojo);
-    margin:0 auto;
+    color: var(--rojo);
+    margin: 0 auto;
 }
-.subjet {
+
+.email {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
 }
-.subjet label {
+
+.email label {
     margin-bottom: 2%;
     margin-top: 3%;
 }
-.subjet input {
+
+.email input {
     outline: none;
     border-style: none;
     width: 127%;
@@ -243,15 +356,18 @@ img {
     font-size: 1.5rem;
     padding-left: 15px;
 }
+
 .msg {
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
 }
+
 .msg label {
     margin-bottom: 3%;
     margin-top: 4%;
 }
+
 .msg input {
     height: 25vh;
     width: 34vw;
@@ -262,9 +378,10 @@ img {
     font-size: 1.5rem;
     text-align: start;
 }
-.btnsub  {
+
+.btnsub {
     color: var(--blanco);
-    background-color:var(--rojo);
+    background-color: var(--rojo);
     height: 60px;
     width: 180px;
     font-size: 25px;
@@ -275,12 +392,14 @@ img {
     margin: 20% 0 0 45%;
     box-shadow: 0 0 3px black;
 }
+
 .btnsub:hover {
     transition: .4s;
     background-color: var(--rojo);
     color: var(--blanco);
     box-shadow: 0px 0px 35px var(--rojo), 0px 0px 15px var(--rojo);
 }
+
 textarea {
     width: 127%;
     outline: none;
@@ -306,37 +425,28 @@ textarea {
     height: 90px;
 }
 
-.icons i { 
+.icons i {
     color: var(--rojo);
     font-size: 30px;
     display: inline;
     margin-bottom: 30%;
     cursor: pointer;
 }
+
 .icons {
-    margin-left: 45%;
+    margin-left: 42%;
     display: inline-flex;
     margin-bottom: 25px;
     margin-top: 60px;
 }
+
 .lab {
     margin-right: 50px;
 }
+
 .icono {
     margin-right: 70px;
     color: var(--azul);
-}
-
-.rights {
-    margin-top: 1px;
-}
-
-.rights {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    position: absolute;
-    left: 42%;
-    
 }
 
 /* media querys */
@@ -348,12 +458,14 @@ textarea {
         align-items: center;
     }
 }
+
 @media (min-width: 768px) {
     .navegacion {
         display: flex;
         gap: 2rem;
     }
 }
+
 @media (min-width: 768px) {
     .contenido-principal {
         display: grid;
@@ -361,6 +473,7 @@ textarea {
         column-gap: 4rem;
     }
 }
+
 @media (max-width: 768px) {
     .texto {
         display: block;
@@ -370,43 +483,66 @@ textarea {
 }
 
 @media (max-width: 768px) {
-   .caja1, .caja2 {
-    display: block;
+
+    .caja1,
+    .caja2 {
+        display: block;
+    }
+
+    .rifle {
+        width: 86%;
+        height: 225px;
+        margin-bottom: 8px;
+    }
+
+    .phone {
+        display: grid;
+        grid-template-columns: 50% 51%;
+    }
+
+    .handgun {
+        width: 87%;
+    }
+
+    .ammo {
+        width: 79%;
+        margin-left: -24px;
+    }
+
+    .clean {
+        width: 87%;
+    }
+
+    .revolver {
+        width: 79%;
+        margin-left: -24px;
+    }
+
+    .sniper {
+        position: absolute;
+        right: 100px;
+    }
+
+    .shotgun {
+        width: 86%;
+        margin-top: 265px;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+   .fline {
+    display: flex;
+    justify-content: space-between;
    }
 
-   .rifle {
-    width: 85%;
+   .btnsub {
+    position: relative;
+    right: 50px;
    }
 
-   .phone {
-    display: grid;
-    grid-template-columns: 48% 52%;
-   }
-
-   .handgun {
-    width: 90%;
-    margin-right: 2px;
-   }
-
-   .ammo {
-    width: 71%;
-   }
-
-   .clean {
-    width: 90%;
-    margin-right: 2px;
-   }
-
-   .revolver {
-    width: 71%;
-   }
-
-   .sniper {
-    right: 100px;
-   }
-
-   .shotgun {
-    width: 85%;
-    margin-top: 250px;
+   .last-n {
+    margin-left: 130px;
    }
 }
+

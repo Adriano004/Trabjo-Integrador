@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheArmory</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="contenedor">
             <div class="barra">
                 <div class="logo">
-                <a  href="index.html"><img src="logo.webp" alt="" class="logo__post"></a>
+                    <a href="index.html"><img src="logo.webp" alt="" class="logo__post"></a>
                 </div>
 
                 <nav class="navegacion">
-                    <a href="#" class="nav__enlace">Home</a>
-                    <a href="#" class="nav__enlace">About us</a>
-                    <a href="#" class="nav__enlace">Info</a>
-                    <a href="#" class="nav__enlace">Contact</a>
+                    <a href="#home" class="nav__enlace">Home</a>
+                    <a href="#aboutus" class="nav__enlace">About us</a>
+                    <a href="#info" class="nav__enlace">Info</a>
+                    <a href="#cont" class="nav__enlace">Contact</a>
                 </nav>
             </div>
         </div>
 
         <div class="texto">
             <h2>Firearms blog</h2>
-            <p>Welcome to our firearms website. If you are an amateur<br> or an expert on the subject, you have come to the right place.</p>
+            <p>Welcome to our firearms website. If you are an amateur<br> or an expert on the subject, you have come to
+                the right place.</p>
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="aboutus">
         <h1 class="about__texto">About us</h1>
-        <p class="about__texto-p">We are Lone Star Armory a blog about firearms. Do you want to know everything about pistols, rifles, snipers, etc? So you are on the right page. Here we will teach you everything you want to know about handling weapons, how to use them, cleaning tips and more. Keep scrolling down and explore as much as you want.</p>
+        <p class="about__texto-p">We are Lone Star Armory a blog about firearms. Do you want to know everything about
+            pistols, rifles, snipers, etc? So you are on the right page. Here we will teach you everything you want to
+            know about handling weapons, how to use them, cleaning tips and more. Keep scrolling down and explore as
+            much as you want.</p>
     </section>
 
-    <section class="products">
+    <section class="pro" id="info">
         <h1 class="pro__texto">Information</h1>
         <p class="pro__texto-p">Here you can find information about your favorite weapons</p>
 
-    <div class="guns">
-        <div class="caja1">
-            
-            <div class="rifle"><img src="rifle.jpg" alt="rifle"></div>
-            
-        <div class="caja1 phone">
-            <div class="handgun"><img src="handgun.jpg" alt="handgun" height="225px"></div>
-            <div class="ammo"><img src="ammo.jpg" alt="ammo" height="225"></div>
-        </div>
+        <div class="guns">
+            <div class="caja1">
 
+                <div class="rifle">
+                    <h1 class="products">Assual rifles</h1>
+                </div>
+
+                <div class="caja1 phone">
+                    <div class="handgun">
+                        <h1 class="hand">Handguns</h1>
+    
+                    </div>
+                    <div class="ammo">
+                        <h1 class="amm">ammos</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="caja2">
+                <div class="caja2 phone">
+                    <div class="clean">
+                        <h1 class="products clea">Cleaning</h1>
+                    </div>
+                    <div class="revolver">
+                        <h1 class="products rev">Revolvers</h1>
+                    </div>
+                </div>
+                <div class="sniper">
+                    <h1 class="snip">Snipers</h1>
+                </div>
+            </div>
+            <div class="shotgun">
+                <h1 class="shot">Shotgun</h1>
+            </div>
         </div>
-        <div class="caja2">
-            <div class="caja2 phone">
-            <div class="clean"><img src="limpieza.jpg" alt="clean" height="235px"></div>
-            <div class="revolver"><img src="revolver.jpg" alt="revolver" height="235px"></div>
-        </div>
-            <div class="sniper"><img src="sniper.jpg" alt="sniper" height="235px" width="472px"></div>
-        </div>
-        <div class="shotgun"><img src="shotgun.jpg" alt="shotgun" ></div>
-    </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="cont">
         <h1 class="contact">Contact</h1>
         <form action="">
             <div class="fline">
@@ -70,20 +92,21 @@
                     <label for="">First Name</label>
                     <input type="text" class="nameinput" placeholder="Your Name">
                 </div>
-                <div class="email">
+                <div class="last-n">
                     <label for="">Last Name</label>
                     <input type="text" placeholder="Last Name">
                 </div>
             </div>
-            <div class="subjet">
+            <div class="email">
                 <label for="">Email <b>*</b></label>
                 <input type="email" required placeholder="example@mail.com">
             </div>
             <div class="msg">
                 <label for="">Your message</label>
-                <textarea required class="msg" name="" id="" cols="30" rows="10" placeholder="Enter your message here" ></textarea>
+                <textarea required class="msg" name="" id="" cols="30" rows="10"
+                    placeholder="Enter your message here"></textarea>
             </div>
-            <input  class="btnsub" type="submit" value="submit">
+            <input class="btnsub" type="submit" value="submit">
         </form>
     </section>
 
@@ -94,11 +117,10 @@
                 <a href=""><i class="lab la-facebook-f"></i></a>
                 <a href=""><i class="lar la-envelope"></i></a>
             </div>
-            <p class="rights">All rights reserved © Adriano Medina</p>
         </div>
-        
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/8eb9157fcb.js" crossorigin="anonymous"></script>
-        <!-- Adriano Medina -->
+<!-- Adriano Medina -->
+
 </html>
